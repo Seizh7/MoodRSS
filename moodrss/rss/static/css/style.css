@@ -1,0 +1,127 @@
+body {
+    /* Cache les débordements horizontaux */
+    overflow-x: hidden;    
+}
+
+/* Conteneur de la barre de recherche*/
+#search-container {
+    margin-bottom: 20px;
+    min-height: 180px;
+    border-bottom: 1px solid rgb(221, 218, 218);
+}
+
+/* Texte du nom de la recherche */
+.search-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: x-large;
+}
+
+/*Bouton Search*/
+.my-btn {
+    background-color: #3068ff;
+    color: #F8F8F8;
+}
+
+/*Barre de recherche*/
+.my-input {
+    border: 1px solid #3068ff;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+/*Contenu de la recherche*/
+.search-content {
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 10px;
+}
+
+/*Survol du contenu de la recherche*/
+.search-content:hover {
+    border: 1px solid #3068ff;
+}
+
+/*Titre du sentiment*/
+.sentiment {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Description du sentiment*/
+.sentiment-text {
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Titre d'article*/
+.feed-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+/*Bouton d'ouverture de lien*/
+.my-open-btn {
+    background-color: #3068ff;
+    width: 5rem;
+    height: 2.2rem;
+}
+
+/*Ecran de moins de 991px*/
+@media (max-width: 991px) {
+    /*Barre de recherche*/
+    .input-group {
+        width: 90% !important;
+    }
+
+    /*Marges pour les différents liens*/
+    .feeds-div-content {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+
+    /*Marges pour lle sentiment selectionne*/
+    .feeds-div-sentiment {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+    }
+}
+
+/*Ecran de plus de 991px*/
+@media (min-width: 991px) {  
+    /*Marges pour les différents liens*/  
+    .feeds-div-content {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+    }
+
+    /*Marges pour lle sentiment selectionne*/
+    .feeds-div-sentiment {
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+}
+
+/*Bordure de la division si aucun flux n'est trouvé*/
+.error-div {
+    border: 1px solid rgb(221, 218, 218);
+}
+
+/*Change la couleur de la bordure au survol*/
+.error-div:hover {
+    border: 1px solid #3068ff;
+}
+
+/* Supprime l'ombre et le contour des formulaire et des boutons */
+.form-control, .btn {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* Définit la bordure et la couleur du texte pour le bouton de filtre */
+.filter-button {
+    border: 1px solid #3068ff;
+    color: #3068ff;
+}
