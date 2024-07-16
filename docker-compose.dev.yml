@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./moodrss
+    container_name: moodrss_web
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - static_volume:/home/moodrss/web/staticfiles
+    ports:
+      - 8000:8000
+    security_opt:
+      - no-new-privileges:true
+    restart: always
+
+volumes:
+  static_volume:
